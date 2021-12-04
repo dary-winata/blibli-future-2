@@ -1,0 +1,9 @@
+- name: config node awal
+  hosts: all
+  remote_user: root
+  become: yes
+  
+  roles:
+    - Docker
+    - Kubernetes
+    - nfs
